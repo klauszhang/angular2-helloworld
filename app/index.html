@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Angular 2 Hello World</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--1. Load libraries-->
+    <script src="lib/es6-shim/es6-shim.min.js"></script>
+    <script src="lib/systemjs/dist/system-polyfills.js"></script>
+
+    <script src="lib/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="lib/systemjs/dist/system.src.js"></script>
+    <script src="lib/rxjs/bundles/Rx.js"></script>
+    <script src="lib/angular2/bundles/angular2.dev.js"></script>
+
+    <!--2. Configure SystemJS-->
+    <script>
+        System.config({
+            packages:{
+                app:{
+                    format:'register',
+                    defaultExtension:'js'
+                }
+            }
+        });
+    </script>
+</head>
+
+<!--3. Display the application-->
+<body>
+    <my-app>Load...</my-app>
+</body>
+
+</html>
